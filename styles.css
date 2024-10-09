@@ -1,0 +1,297 @@
+html {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    font-family: 'Open sans' !important;
+}
+
+/* Header */
+header {
+    background: #EBF4FF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+header .headerContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+header button {
+    padding: 12px 36px;
+    font-size: 15px;
+    margin: 12;
+    background: #2979EC 0% 0% no-repeat padding-box;
+    border-radius: 50px;
+    color: #FFFFFF;
+    border: none;
+}
+
+header .headerTxt1 {
+    font-size: 50px;
+    padding-bottom: 15px;
+}
+
+header .headerTxt2 {
+    font-size: 20px;
+}
+
+header .headerTxt1 span {
+    font-weight: 800;
+}
+
+@media only screen and (max-width: 750px) {
+    header {
+        height: 659px;
+    }
+    header .headerText {
+        text-align: center;
+        padding-left: 0px;
+        padding-top: 78px;
+    }
+
+    header .headerTxt2 {
+        padding: 0px 21px !important;
+    }
+
+    header .headerBtnContainer {
+        padding-top: 36px;
+        padding-right: 21px;
+    }
+
+    header img {
+        padding-left: 16px;
+        padding-top: 5px;
+    }
+}
+
+@media only screen and (min-width: 751px) {
+    header {
+        height: 585px;
+    }
+
+    header .headerText {
+        padding-left: 153px;
+        padding-top: 113px;
+    }
+
+    header .headerTxt2 {
+        width: 521px;
+    }
+
+    header .headerBtnContainer {
+        padding-top: 50px;
+        padding-right: 55px;
+    }
+
+    .headerContainer div:has(img) {
+        padding-left: 47px;
+        padding-top: 19px;
+    }
+}
+
+/* Marketing Container */
+.maincontainer {
+    display: flex;
+    align-items: center;
+}
+
+.marketText, .marketImage {
+    flex: 2;
+}
+
+.marketText {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.marketHeader {
+    font-size: 40px;
+    padding-bottom: 16px;
+}
+
+.marketText span {
+    font-weight: 800;
+}
+
+.image1 img {
+    width: 100%;
+}
+
+.main2 {
+    align-items: flex-start;
+}
+
+@media only screen and (max-width: 750px) {
+    .maincontainer {
+        flex-direction: column-reverse;
+    }
+
+    .image1 {
+        padding: 21px;
+    }
+
+    .image2 {
+        padding: 50px 21px;
+    }
+
+    .main1 {
+        padding-bottom: 50px;
+    }
+    
+    .text1 {
+        padding: 17px;
+        text-align: center;
+    }
+
+    .text2 {
+        padding: 17px;
+        text-align: center;
+    }
+
+    .image2 img {
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (min-width: 751px) {
+    .image1 {
+        padding-right: 120px;
+    }
+
+    .text1 {
+        padding-left: 154px;
+        padding-right: 68px;
+    }
+
+    .main1 {
+        padding-bottom: 144px;
+    }
+
+    .image2 {
+        padding-left: 154px;
+        padding-bottom: 129px;
+    }
+
+    .image2 img {
+        width: 80%;
+    }
+
+    .text2 {
+        padding-right: 164px;
+        padding-left: 50px;
+        padding-top: 50px;
+    }
+    
+}
+
+.main1 {
+    padding-top: 140px;
+}
+
+.text2 .marketHeader {
+    padding-bottom: 40px;
+}
+
+/* Footer */
+footer {
+    background: #0A459E 0% 0% no-repeat padding-box !important;
+    opacity: 1;
+    height: 392px;
+    text-align: center;
+}
+
+.footerText {
+    position: relative;
+    font-size: 42px;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.footerText span {
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+footer .footerBtnContainer {
+    position: relative;
+}
+
+footer button {
+    cursor: pointer;
+    background: #FFBE3C 0% 0% no-repeat padding-box;
+    border-radius: 50px;
+    opacity: 1;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #0A459E;
+    opacity: 1;
+    padding: 12px 36px;
+    font-size: 15px;
+    margin: 12;
+    font-weight: bold;
+    border: none;
+}
+
+@media only screen and (max-width: 750px) {
+    footer {
+        height: 502px;
+    }
+    .footerText {
+        top: 101px;
+        padding: 0px 22px;
+    }
+
+    footer .footerBtnContainer {
+        padding-top: 41px;
+        bottom: -99px;
+    }
+}
+
+@media only screen and (min-width: 751px) {
+    footer {
+        height: 405px;
+    }
+
+    .footerText {
+        top: 119px;
+        padding: 0px 20px;
+    }
+
+    footer .footerBtnContainer {
+        top: 128px;
+        padding: 50px;
+    }
+}
+
+/* Modal */
+
+.modal-body-title {
+    text-align: center;
+}
+
+#contactModalLabel {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.confirmMessage {
+    text-align: center;
+}
+
+#modalSend {
+    background-color: #2979EC !important;
+}
